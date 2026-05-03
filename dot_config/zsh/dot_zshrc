@@ -1,0 +1,12 @@
+# alias
+[ -f $ZDOTDIR/alias/core ] && source $ZDOTDIR/alias/core
+[ -f $ZDOTDIR/alias/git ] && source $ZDOTDIR/alias/git
+
+# mise
+eval "$(~/.local/bin/mise activate zsh)"
+
+# starship
+[ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
+
+# sheldon
+[ -x "$(command -v sheldon)" ] && eval "$(sheldon source)"

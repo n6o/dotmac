@@ -1,0 +1,13 @@
+[user]
+    name = n6o
+    email = 16708063+n6o@users.noreply.github.com
+
+[include]
+    path = config.local
+
+[includeIf "gitdir:~/src/github.com/n6o"]
+  path = config.n6o
+
+[ghq]
+    vcs = git
+    root = ~/src
