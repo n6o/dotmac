@@ -1,0 +1,20 @@
+alias ls='eza --icons=always'
+alias ll='eza -al --icons=auto --group-directories-first --sort=name -F always'
+alias tree='eza -T'
+
+# Colorize grep output
+alias grep='rg --color=always -n'
+alias fgrep='rg --color=always -n -F'
+
+alias find='fd'
+
+# Add safty nets
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# NeoVim
+alias vi="nvim"
+alias vim="nvim"
+alias view="nvim -R"
+
