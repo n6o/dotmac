@@ -10,3 +10,6 @@ eval "$(~/.local/bin/mise activate zsh)"
 
 # sheldon
 [ -x "$(command -v sheldon)" ] && eval "$(sheldon source)"
+
+autoload -Uz compinit
+compinit

@@ -14,11 +14,20 @@ shell = "zsh"
 
 [plugins]
 
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+dir = "src"
+apply = ["fpath"]
+
 [plugins.autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 
 [plugins.syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+
+[plugins.local-completions]
+local = "~/.config/zsh/completions"
+apply = ["fpath"]
 
 # For example:
 #

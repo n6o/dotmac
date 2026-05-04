@@ -92,3 +92,11 @@ curl https://mise.run | sh
 
 ~/.local/bin/chezmoi apply -v
 ```
+
+## zsh configuration
+
+### completions
+
+```bash
+docker completion zsh > ~/.docker/completions/_docker
+```
