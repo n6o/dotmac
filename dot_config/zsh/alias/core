@@ -1,6 +1,6 @@
 alias ls='eza --icons=always'
 alias ll='eza -al --icons=auto --group-directories-first --sort=name -F always'
-alias tree='eza -T'
+alias tree='eza -T --git-ignore'
 
 # Colorize grep output
 alias grep='rg --color=always -n'
