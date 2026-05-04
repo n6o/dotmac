@@ -8,6 +8,19 @@
 [includeIf "gitdir:~/src/github.com/n6o"]
   path = config.n6o
 
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
 [ghq]
     vcs = git
     root = ~/src
+
+[delta]
+    line-numbers = true
+    side-by-side = true
