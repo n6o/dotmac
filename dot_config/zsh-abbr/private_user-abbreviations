@@ -63,3 +63,6 @@ abbr gget='ghq get'
 
 # ghq/fzf
 abbr cdg='cd $(ghq root)/$(ghq list | fzf)'
+
+# history
+abbr h='history'
