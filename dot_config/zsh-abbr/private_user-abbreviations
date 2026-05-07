@@ -1,0 +1,65 @@
+abbr "hw"="echo hello world"
+
+abbr ls='eza --icons=always'
+abbr ll='eza -al --icons=auto --group-directories-first --sort=name -F always'
+abbr tree='eza -T --git-ignore'
+
+# Colorize grep output
+abbr grep='rg --color=always -n'
+abbr fgrep='rg --color=always -n -F'
+
+abbr find='fd'
+
+# Add safty nets
+abbr rm='rm -i'
+abbr cp='cp -i'
+abbr mv='mv -i'
+
+# NeoVim
+abbr vi="nvim"
+abbr vim="nvim"
+abbr view="nvim -R"
+
+# Shorthand for git command
+abbr g='git'
+
+# Basic git commands
+abbr ga='git add'
+abbr gau='git add -u'
+abbr gcm='git commit -m'
+abbr gca='git commit --amend'
+
+# Status and information
+abbr gs='git status'
+abbr gl='git log'
+abbr glno='git log --name-only'
+
+# branching
+abbr gsw='git switch'
+abbr gswc='git switch -c'
+
+# Remote operations
+abbr gf='git fetch'
+
+# Diff
+abbr gd='git diff'
+abbr gds='git diff --staged'
+
+# Reset
+abbr grh='git reset HEAD'
+abbr grhh='git reset HEAD --hard'
+
+# Show verbose output about tags, branches, or remotes
+abbr gtv='git tag | sort -V'
+abbr gbv='git branch -v'
+abbr grv='git remote -v'
+
+# Grep
+abbr gg='git grep'
+abbr ggl='git grep -l'
+
+# ghq
+abbr gget='ghq get'
+
+# ghq/fzf
+abbr cdg='cd $(ghq root)/$(ghq list | fzf)'

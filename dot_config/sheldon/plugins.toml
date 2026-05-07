@@ -29,6 +29,10 @@ github = "zsh-users/zsh-syntax-highlighting"
 local = "~/.config/zsh/completions"
 apply = ["fpath"]
 
+[plugins.abbr]
+github = "olets/zsh-abbr"
+use = ["zsh-abbr.zsh"]
+
 # For example:
 #
 # [plugins.base16]
