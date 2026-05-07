@@ -1,0 +1,14 @@
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+
+# Do not record duplicate commands consecutively in history
+setopt hist_ignore_dups
+
+# Do not record commands starting with a space in history
+# Useful for sensitive commands (e.g. passwords, secret keys) that should not be saved
+setopt hist_ignore_space
+
+# Share history across all terminal sessions in real time
+setopt share_history

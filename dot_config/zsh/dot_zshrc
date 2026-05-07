@@ -2,11 +2,19 @@
 [ -f $ZDOTDIR/alias/core ] && source $ZDOTDIR/alias/core
 [ -f $ZDOTDIR/alias/git ] && source $ZDOTDIR/alias/git
 
+[ -f $ZDOTDIR/hist ] && source $ZDOTDIR/hist
+
 # mise
 eval "$(~/.local/bin/mise activate zsh)"
 
 # starship
 [ -x "$(command -v starship)" ] && eval "$(starship init zsh)"
+
+# zoxide
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
+
+# fzf
+[ -x "$(command -v fzf)" ] && source <( fzf --zsh )
 
 # sheldon
 [ -x "$(command -v sheldon)" ] && eval "$(sheldon source)"
