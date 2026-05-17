@@ -28,6 +28,7 @@ abbr ga='git add'
 abbr gau='git add -u'
 abbr gcm='git commit -m'
 abbr gca='git commit --amend'
+abbr gcae='git commit --allow-empty -m "chore: initial commit"'
 
 # Status and information
 abbr gs='git status'
